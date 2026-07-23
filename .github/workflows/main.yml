@@ -30,7 +30,7 @@ jobs:
       - name: Run DeadGet v3
         env:
           # Uses the Personal Access Token you will store in GitHub Secrets
-          GITHUB_TOKEN: ${{ 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 }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           chmod +x gitget.py
           ./gitget.py ${{ github.event.inputs.username }}
