@@ -1,4 +1,4 @@
-name: Preview DeadGet v3 README
+name: Preview GitgetV1 README
 
 on:
   # This allows you to manually trigger the workflow from the GitHub Actions tab
@@ -27,7 +27,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: Run DeadGet v3
+      - name: Run GitGet
         env:
           # Uses the Personal Access Token you will store in GitHub Secrets
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
